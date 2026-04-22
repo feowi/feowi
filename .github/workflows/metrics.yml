@@ -17,10 +17,7 @@ jobs:
           user: feowi
           template: classic
           base: header, activity
-          config_order: base.header, isocalendar, base.activity, music, wakatime
-
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          config_order: base.header, base.activity, music, wakatime
           plugin_lines: yes
 
           plugin_music: yes
