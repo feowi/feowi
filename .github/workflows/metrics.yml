@@ -12,15 +12,30 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # Options
           user: feowi
           template: classic
           base: header, activity
 
-          # WakaTime
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          plugin_lines: yes
+
+          plugin_music: yes
+          plugin_music_provider: lastfm
+          plugin_music_mode: recent
+          plugin_music_token: ${{ secrets.LASTFM_TOKEN }}
+
           plugin_wakatime: yes
           plugin_wakatime_days: 30
           plugin_wakatime_limit: 5
