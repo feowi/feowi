@@ -17,12 +17,7 @@ jobs:
           user: feowi
           template: classic
           base: header, activity
-          config_display: large
-          config_order: base.header, isocalendar, languages, base.activity, music, wakatime
-
-          plugin_languages: yes
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 8
+          config_order: base.header, isocalendar, base.activity, music, wakatime
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
